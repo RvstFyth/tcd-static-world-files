@@ -1,5 +1,6 @@
 module.exports = {
     label: `Dumped backpack`,
+    enabled: true,
     chance: 100,
     descriptions: [
         // This will be displayed in the prompt where the player chooses a location to loot. A random entry will be picked if there is more then one.
