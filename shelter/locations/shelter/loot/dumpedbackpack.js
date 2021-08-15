@@ -1,5 +1,6 @@
 module.exports = {
     label: `Dumped backpack`,
+    chance: 100,
     descriptions: [
         // This will be displayed in the prompt where the player chooses a location to loot. A random entry will be picked if there is more then one.
         'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.',
@@ -8,7 +9,9 @@ module.exports = {
         // This will be displayed in the prompt before a fight happens. A random entry will be picked if there is more then one.
         'As you walk towards the backpack, a rotten zombie starts coming towards you. Do you choose to fight?',
     ],
-    encounterChance: 95, // The chance to encounter a mob
+
+    maxLootUnique: 2,
+    maxLootTotal: 5,
     loot: [
         {
             weight: 100,
@@ -25,6 +28,8 @@ module.exports = {
             ],
         },
     ],
+
+    encounterChance: 95, // The chance to encounter a mob
     mobs: [
         {
             name: 'rotten zombie',
