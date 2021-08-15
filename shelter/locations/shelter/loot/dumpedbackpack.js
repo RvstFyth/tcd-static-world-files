@@ -1,5 +1,9 @@
 module.exports = {
     label: `Dumped backpack`,
+    descriptions: [
+        // This is an array to support multiple descriptions, so a random one can be selected if there is more then one.
+        'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.',
+    ],
     loot: [
         {
             weight: 100,
