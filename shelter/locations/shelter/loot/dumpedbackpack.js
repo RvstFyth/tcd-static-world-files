@@ -34,7 +34,14 @@ module.exports = {
     mobs: [
         {
             name: 'rotten zombie',
-            statModifiers: { health: 0.1 },
+            stats: {
+                minHealth: 10,
+                maxHealth: 50,
+                minAttack: 1,
+                maxAttack: 2,
+                minDefence: 1,
+                maxDefence: 1,
+            },
         },
     ],
 };
